@@ -20,7 +20,7 @@ class get_data:
 
     def get_single_data(self,name,path):
 
-        api = TqApi(auth=TqAuth("lievan", "kuaiqi0910"))
+        api = TqApi(auth=TqAuth("用户名", "用户密码"))
         my_name = self.filename[:-4]+name+".csv" # 生成的文件名
         print(my_name)
         save_path = os.path.join(path,my_name) # 这样子生成的文件才能保存在指定文件夹下
